@@ -1,2 +1,7 @@
 # list of students
-# Bryant Bucknor
+
+Xavier
+Cherylirene
+jacqueline
+Jarrecia
+Bryant Bucknor
