@@ -1,8 +1,12 @@
+# teacher
+leo
+
 # list of students
 
-leo
 Xavier
 Cherylirene
 jacqueline
 Jarrecia
 Bryant Bucknor
+Christal Horne
+Coty Hunter
