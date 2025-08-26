@@ -88,8 +88,7 @@ body {
   transition: background-color 0.3s ease;
 }
 
-#section4 a {color:#0000EE;}
-#section4 a:hover {color:#551A8B;}
+
 #section4 button:hover {
   background-color: #0000EE;
 }
