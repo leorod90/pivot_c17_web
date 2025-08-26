@@ -30,8 +30,8 @@ body {
 
     img {
   width: 100%;
-  max-width: 300px;
-  height: auto;  
+  max-width: 230px;
+  height: 250px;  
   border-radius: 8px;
 }
     
@@ -83,7 +83,7 @@ body {
 }
 
 #section4 button:hover {
-  background-color: #16316a;
+  background-color: cyan;
 }
 
 .section5 {
