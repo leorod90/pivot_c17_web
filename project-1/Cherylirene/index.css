@@ -142,13 +142,11 @@ input[type=email] {
   box-sizing: border-box;
 }
 
-.section5 button:hover {
-  background-color: #16316a;
-  width:100%;
+button[type="submit"] {width: 780px;
+padding: 10px 40px;}
 
+textarea {width: 500px; height: 80px; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-size:16px;
 }
-
-
 
 
 
