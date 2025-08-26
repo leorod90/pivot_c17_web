@@ -5,8 +5,6 @@ body {
   padding: 0;
 }
 
-
-
 header {
   text-align: center;
   background-color: #333;
@@ -117,13 +115,13 @@ img {
   justify-content: center;
 }
 
-section5 h2 {
+.section5 h2 {
   text-align: center;
   color: #1a1a1a;
   margin-bottom: 20px;
 }
 
-section5 label {
+.section5 label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
