@@ -4,7 +4,7 @@
 https://github.com/leorod90/c17_travel_project
 
 ## instructions
--ALWAYS PULL FROM "main" BEFORE STARTING
+-ALWAYS PULL FROM "main+" BEFORE STARTING
 -MAKE SURE YOU ARE ON YOU OWN BRANCH
 -in the project-1 folder there are 2 images
 -try your best to replicate the images
