@@ -112,19 +112,21 @@ section5 label {
   font-weight: bold;
 }
 
+.section {
+      background: #fff;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 8px;
+      width: 80%;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
 
 
-#section5 button {
-  width: 100%;
-  padding: 12px;
-  background-color: #1e3d7b; 
-  color: #fff;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
 
 input[type=text] {
   width: 65%;
@@ -140,19 +142,14 @@ input[type=email] {
   box-sizing: border-box;
 }
 
-input[type=message] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  
-  box-sizing: border-box;
-}
-
-
-
-
-
-
-#section5 button:hover {
+.section5 button:hover {
   background-color: #16316a;
+  width:100%;
+
 }
+
+
+
+
+
+
