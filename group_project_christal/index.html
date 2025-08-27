@@ -1,1 +1,106 @@
-test test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beginner HTML & CSS Practice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 10px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card hr {
+      margin: 10px 0 20px;
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 20px;
+    }
+
+    ol {
+      margin-left: 20px;
+    }
+
+    img {
+      border-radius: 8px;
+      max-width: 150px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+ <header>
+    Beginner HTML & CSS Practice
+  </header>
+
+  <div class="container">
+    <!-- Section 1 -->
+    <div class="card">
+      <h2>Section 1: Text & Headings</h2>
+      <hr>
+      <p>This is a paragraph of text. Notice how it’s wrapped in a &lt;p&gt; tag.</p>
+      <p><b>Bold text</b> and <i>italic text</i> are also important.</p>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="card">
+      <h2>Section 2: Lists</h2>
+      <hr>
+      <p>Here’s an unordered list of fruits:</p>
+      <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+      </ul>
+
+      <p>Here’s an ordered list of steps:</p>
+      <ol>
+        <li>eat the apple</li>
+        <li>dice the apple</li>
+        <li>apples apples</li>
+      </ol>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="card">
+      <h2>Section 3: Images</h2>
+      <hr>
+      <p>Below is an image with alt text:</p>
+      <img src="https://media.istockphoto.com/id/1393546429/photo/two-red-kittens.jpg?s=612x612&w=0&k=20&c=b1PR1oDiY2jNUdB4Le48fTqR1bCHN6qU0NGJda5VgiY=" alt="Two cute kittens">
+    </div>
+  </div>
+
+</body>
+</html>
