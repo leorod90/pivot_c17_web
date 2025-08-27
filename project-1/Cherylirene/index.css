@@ -40,8 +40,13 @@ img {
 }
 
 
+a:link{color:}
 
+a:visited{color:#0000EE;}
 
+a:hover{color:purple;}
+
+a:active{color:red;}
 
 h2 {
   border-bottom: 1px solid #ccc;
