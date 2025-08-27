@@ -1,0 +1,38 @@
+h1{
+    border-top: 100 px solid red;
+    background-color: blue;
+    text-align: center;
+    color: red;
+    padding: 35px;
+}
+
+body{
+    font-family: Arial,sans-serif;
+    background-color: aquamarine;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 60%;
+    margin: 20px auto;
+    background-color: beige;
+    padding: 20px;
+    border-radius: 8px;
+    color: bisque;
+    text-align: center;
+}
+
+.section{
+    background-color: aquamarine;
+    color: black;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: left;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 6px;
+}
