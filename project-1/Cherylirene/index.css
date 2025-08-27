@@ -39,73 +39,7 @@ img {
   border-radius: 8px;
 }
 
-#section4 {
-  background-color: #0000EE;
-  padding: 40px;
-  max-width: 500px;
-  margin: 30px auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-
-
-#section4 vistied {
-  color: #551A8B;
-}
-
-
-#section4 h2 {
-  text-align: center;
-  color: #1a1a1a;
-  margin-bottom: 20px;
-}
-
-#section4 label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-#section4 input,
-#section4 textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-}
-
-#section4 button {
-  width: 100%;
-  padding: 12px;
-  background-color: #0000EE;
-  color: #fff;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-
-
-.section5 h2 {
-  text-align: center;
-  color: #1a1a1a;
-  margin-bottom: 20px;
-}
-
-.section5 label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
 
 
 
