@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
-<title>Fury Friends</title>
-<!--Link to CSS -->
-<link rel="stylesheet" href="jackie.css">
+    <title>Fury Friends</title>
+    <!--Link to CSS -->
+    <link rel="stylesheet" href="jackie.css">
 </head>
+
 <body>
     <div>
-<header>
-<h1 style="font-family: italic;">Fury Friends</h1>
-</header>
-</div>
-<div>
-<section>
+        <header>
+            <h1 style="font-family: italic;">Fury Friends</h1>
+        </header>
+    </div>
     <div>
-    <ul>
-        <li>Apple</li>
-        <li>Banana</li>
-        <li>Orange</li>
-    </ul>
-    <ol>
-        <li>Open your editor</li>
-    <li>Write some HTML</li>
-    <li>Save and refresh</li> 
-</ol>
-</section>
-</div>
+        <section>
+            <div>
+                <ul>
+                    <li>Apple</li>
+                    <li>Banana</li>
+                    <li>Orange</li>
+                </ul>
+                <ol>
+                    <li>Open your editor</li>
+                    <li>Write some HTML</li>
+                    <li>Save and refresh</li>
+                </ol>
+        </section>
+    </div>
 
 </body>
 <div>
-<section>
-    <img src="https://img.freepik.com/premium-photo/cute-furry-cats-indoors_862994-171624.jpg">
+    <section>
+        <img src="https://img.freepik.com/premium-photo/cute-furry-cats-indoors_862994-171624.jpg">
     </section>
     <section>
         <h1>Links</h1>
@@ -48,9 +50,10 @@
             <label>Email <input type="email" name="email" required></label>
             <label>Message <textarea name="message" required></textarea></label>
             <button type="submit">submit</button>
-            
+
         </form>
     </section>
 </div>
 </body>
+
 </html>
