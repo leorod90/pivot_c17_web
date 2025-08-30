@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  </link>
+  <title>Beginner HTML & CSS Practice</title>
+</head>
+
+<body>
+
+  <header>Beginner HTML & CSS Practice</header>
+
+  <div class="section">
+    <h2>Section 1: Text & Headings</h2>
+    <p>This is a paragraph of text. Notice how it’s wrapped in a <code>&lt;p&gt;</code> tag.</p>
+    <p><strong>Bold text</strong> and <em>italic text</em> are also important.</p>
+  </div>
+
+  <div class="section">
+    <h2>Section 2: Lists</h2>
+    <p>Here’s an unordered list of fruits:</p>
+    <ul>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+    </ul>
+
+    <p>Here’s an ordered list of steps:</p>
+    <ol>
+      <li>Open your editor</li>
+      <li>Write some HTML</li>
+      <li>Save and refresh</li>
+    </ol>
+  </div>
+
+  <div class="section">
+    <h2>Section 3: Images</h2>
+    <p>Below is an image with alt text:</p>
+    <img
+      src="https://www.rd.com/wp-content/uploads/2024/06/50-Photos-of-Cute-Kittens-That-Will-Make-You-Melt_GettyImages-187144066_SSedit_FT.jpg"
+      alt="Cute kittens in a blanket">
+  </div>
+
+  <div class="section">
+    <h2>Section 4: Links</h2>
+    <p>Here’s link to wikipedia <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a></p>
+
+  </div>
+
+  <div class="section">
+    <h2>Section 5: Forms</h2>
+
+    <form action="/submit-form" method="POST">
+
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Your name" required><br><br>
+
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Your email" required><br><br>
+
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
