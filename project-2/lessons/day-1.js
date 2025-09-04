@@ -41,9 +41,3 @@ if (userTry == password) {
 else {
   console.log("Error, try again!")
 }
-
-
-
-
-
-
