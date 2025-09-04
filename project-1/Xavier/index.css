@@ -12,9 +12,7 @@
     font-weight: bold;
 } 
 
-s
-
-    .the-box {
+.the-box {
         width: 1500px;; /* Sets the width of the box */
         height: 2000px; /* Sets the height of the box */
         background-color: gray; /* Sets the background color */
