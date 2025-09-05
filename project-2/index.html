@@ -5,11 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JS</title>
 </head>
+<style>
+  body {
+    background-color: gray;
+  }
+</style>
 <body>
+  <h1>Leo</h1>
   
-
   <script>
+    // create a variable called name, alert hello + name
+    const name = "Leo";
+    // create a password variable, make it simple and fake
+    const password = "123123";
+    const userTry = prompt("Enter the password!");
 
+    if (password == userTry) {
+      alert("Hello " + name);
+    }
+    else {
+      console.log("Error!");
+    }
+
+    // alert("Hello " + name);
   </script>
 </body>
 </html>
