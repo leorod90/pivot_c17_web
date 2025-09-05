@@ -24,3 +24,6 @@ https://github.com/leorod90/c17_travel_project
 -Publish: lets me see your branch
 -Merge: combine your code into main
 -Pull Request: ask supervisor for permission to merge your code
+
+## vscode commands
+-Delete Branches:Press Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (macOS) -> delete
