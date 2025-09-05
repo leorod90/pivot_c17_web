@@ -1,37 +1,38 @@
-
-   .header {
+.header {
     background: gray;
     padding: 40px 0 30px 0;
     text-align: center;
 }
-w
+
 .header h1 {
     color: #fff;
     font-size: 2.5em;
     margin: 0;
     font-weight: bold;
-} 
+}
 
 .the-box {
-        width: 1500px;; /* Sets the width of the box */
-        height: 2000px; /* Sets the height of the box */
-        background-color: gray; /* Sets the background color */
-        border: 2px solid black; /* Adds a solid blue border */
-        border-radius: 8px;
-        padding: 20px; /* Adds space inside the box, between content and border */
-        text-align: left;
-       position: relative;
-        margin: 50px; 
-        margin-left: 50px;
-        margin-right: 30px;
-        margin-top: 13%;
-        align-items: center;
-        box-shadow: 0 4px 10px rgba(red, green, blue, alpha);
-        
+    width: 1500px;
+    /* Sets the width of the box */
+    height: 2000px;
+    /* Sets the height of the box */
+    background-color: gray;
+    /* Sets the background color */
+    border: 2px solid black;
+    /* Adds a solid blue border */
+    border-radius: 8px;
+    padding: 20px;
+    /* Adds space inside the box, between content and border */
+    text-align: left;
+    position: relative;
+    margin: 50px;
+    margin-left: 50px;
+    margin-right: 30px;
+    margin-top: 13%;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(red, green, blue, alpha);
+}
 
-    }
-
-    
 .section {
     background: #fff;
     border-radius: 12px;
@@ -51,8 +52,5 @@ w
 .section hr {
     border: none;
     border-top: 2px solid #e0e0e0;
-    margin: 0 0 20px 0;}
-
-    
-
-
+    margin: 0 0 20px 0;
+}
