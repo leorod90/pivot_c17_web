@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+    }
+
+    .container {
+      max-width: 300px;
+    }
+
+    input,
+    button {
+      display: block;
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      width: 100%;
+    }
+
+    #message {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Login-Cherylirene</h2>
+    <input type="text" id="username" placeholder="Enter username">
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="login()">Login</button>
+    <p id="message"></p>
+  </div>
+
+  <script>
+    // ----------------
+    const usernameId = document.getElementById("username");
+    const username = usernameId.value;
+    // const changeUsernameRed = usernameId.style.borderColor = "red"
+    const passwordId = document.getElementById("password");
+    const password = passwordId.value;
+    // const changePasswordRed = passwordId.style.borderColor = "red"
+    const messageEl = document.getElementById("message");
+    // -----------------
+
+  </script>
+</body>
+
+</html>
