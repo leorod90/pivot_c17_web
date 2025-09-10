@@ -2,57 +2,76 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Login Example</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 2rem;
-    }
+    <meta charset="UTF-8">
+    <title>Login Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2rem;
+        }
 
-    .container {
-      max-width: 300px;
-    }
+        .container {
+            max-width: 300px;
+        }
 
-    input,
-    button {
-      display: block;
-      margin: 0.5rem 0;
-      padding: 0.5rem;
-      width: 100%;
-    }
+        input,
+        button {
+            display: block;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            width: 100%;
+        }
 
-    #message {
-      margin-top: 1rem;
-      font-weight: bold;
-    }
-  </style>
+        #message {
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
-  <div class="container">
-    <h2>Login-Cherylirene</h2>
-    <input type="text" id="username" placeholder="Enter username">
-    <input type="password" id="password" placeholder="Enter password">
-    <button onclick="login()">Login</button>
-    <p id="message"></p>
-  </div>
+    <div class="container">
+        <h2>Login-Cherylirene</h2>
+        <input type="text" id="username" placeholder="Enter username">
+        <input type="password" id="password" placeholder="Enter password">
+        <button onclick="login()">Login</button>
+        <p id="message"></p>
+    </div>
 
-  <script>
-    // ----------------
-    const usernameId = document.getElementById("username");
-    const usernameValue = usernameId.value;
-    // const changeUsernameRed = usernameId.style.borderColor = "red"
-    const passwordId = document.getElementById("password");
-    const passwordValue = passwordId.value;
-    // const changePasswordRed = passwordId.style.borderColor = "red"
-    const messageEl = document.getElementById("message");
-    // -----------------
-    const username = "Ceecee";
-    const password = "abc";
-function login(){alert("Hello");}
+    <script>
+        // ----------------
 
-  </script>
+        // const changeUsernameRed = usernameId.style.borderColor = "red"
+        const passwordId = document.getElementById("password");
+        const passwordValue = passwordId.value;
+        // const changePasswordRed = passwordId.style.borderColor = "red"
+        const messageEl = document.getElementById("message");
+        // -----------------
+        const LOGIN_USERNAME = "Ceecee";
+        const LOGIN_PASSWORD = "abc";
+        function login() {
+            const usernameId = document.getElementById("username");
+            const usernameValue = usernameId.value;
+            console.log(usernameValue);
+
+
+            //LOGIN WHEN EMPTY
+            if (usernameValue == "") {
+                alert("Field cannot be empty!");
+            }
+            //LOGIN WHEN WRONG INFO
+            else if (usernameValue !== LOGIN_USERNAME) {
+                const changeUsernameRed = usernameId.style.borderColor = "red"
+            }
+
+            //LOGIN WHEN CORRECT INFO
+        else if (usernameValue == LOGIN_USERNAME) {
+messageEl.innerText = "Welcome";
+        }
+        }
+
+        console.log(usernameValue);
+    </script>
 </body>
 
 </html>
