@@ -37,22 +37,34 @@
     <button onclick="login()">Login</button>
     <p id="message"></p>
   </div>
-  <h3>CREATE a function called login, make it alert hello</h3>
+  <h3>CREATE a username and password variable</h3>
   <script>
     // ----------------
-    const usernameId = document.getElementById("username");
-    const username = usernameId.value;
+    
     // const changeUsernameRed = usernameId.style.borderColor = "red"
     const passwordId = document.getElementById("password");
-    const password = passwordId.value;
+    const passwordValue = passwordId.value; // THIS LINE ADD VALUE
     // const changePasswordRed = passwordId.style.borderColor = "red"
     const messageEl = document.getElementById("message");
     // -----------------
+    const LOGIN_USERNAME = "leo";
+    const LOGIN_PASSWORD = "123"
 
-    
     const login = () => {
-      alert("hello")
+      const usernameId = document.getElementById("username");
+      const usernameValue = usernameId.value;
+
+      // LOGIN WHEN EMPTY
+      if(usernameValue == ""){
+        alert("Field cannot be empty!");
+      }
+      // LOGIN WHEN WRONG INFO
+      // LOGIN WHEN CORRECT INFO
+
+
+      console.log(usernameValue);
     }
+
   </script>
 </body>
 
