@@ -40,8 +40,7 @@
   <h3>CREATE a username and password variable</h3>
   <script>
     // ----------------
-    
-    // const changeUsernameRed = usernameId.style.borderColor = "red"
+
     const passwordId = document.getElementById("password");
     const passwordValue = passwordId.value; // THIS LINE ADD VALUE
     // const changePasswordRed = passwordId.style.borderColor = "red"
@@ -55,10 +54,13 @@
       const usernameValue = usernameId.value;
 
       // LOGIN WHEN EMPTY
-      if(usernameValue == ""){
+      if (usernameValue == "") {
         alert("Field cannot be empty!");
       }
       // LOGIN WHEN WRONG INFO
+      else if (usernameValue !== LOGIN_USERNAME) {
+        const changeUsernameRed = usernameId.style.borderColor = "red"
+      }
       // LOGIN WHEN CORRECT INFO
 
 
