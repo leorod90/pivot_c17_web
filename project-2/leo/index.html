@@ -37,7 +37,6 @@
     <button onclick="login()">Login</button>
     <p id="message"></p>
   </div>
-
  <script>
     // ----------------
 
@@ -62,8 +61,8 @@
         const changeUsernameRed = usernameId.style.borderColor = "red"
       }
       // LOGIN WHEN CORRECT INFO
-      else if () {
-        messageEl.innerText = "Welcome";
+      else if (usernameValue == LOGIN_USERNAME) {
+        messageEl.innerText = "Welcome " + LOGIN_USERNAME;
       }
 
       console.log(usernameValue);
