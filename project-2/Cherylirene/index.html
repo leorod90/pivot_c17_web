@@ -51,26 +51,26 @@
         const LOGIN_PASSWORD = "abc";
         function login() {
             const usernameId = document.getElementById("username");
-            const usernameValue = usernameId.value;
-            console.log(usernameValue);
+            const usernameInput = usernameId.value;
+            console.log(username);
 
 
             //LOGIN WHEN EMPTY
-            if (usernameValue == "") {
+            if (usernameInput == "") {
                 alert("Field cannot be empty!");
             }
             //LOGIN WHEN WRONG INFO
-            else if (usernameValue !== LOGIN_USERNAME) {
+            else if (usernameInput !== LOGIN_USERNAME) {
                 const changeUsernameRed = usernameId.style.borderColor = "red"
             }
 
             //LOGIN WHEN CORRECT INFO
-        else if ( LOGIN_USERNAME == usernameValue ) {
-messageEl.innerText = "Welcome "  +  LOGIN_USERNAME;
+            else if (LOGIN_USERNAME == usernameValue) {
+                messageEl.innerText = "Welcome " + LOGIN_USERNAME;
+            }
+            console.log(usernameInput);
         }
-        }
-
-        console.log(usernameValue);
+        
     </script>
 </body>
 
