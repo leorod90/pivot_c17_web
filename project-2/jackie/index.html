@@ -31,7 +31,7 @@
 
 <body>
   <div class="container">
-    <h2>Login-Leo</h2>
+    <h2>Jacqueline-login</h2>
     <input type="text" id="username" placeholder="Enter username">
     <input type="password" id="password" placeholder="Enter password">
     <button id="login-btn">Login</button>
@@ -51,22 +51,22 @@
 
     const login = () => {
       const usernameId = document.getElementById("username");
-      const usernameValue = usernameId.value;
+      const usernameInput = usernameId.value;
 
       // LOGIN WHEN EMPTY
-      if (usernameValue == "") {
+      if (usernameInput == "") {
         alert("Field cannot be empty!");
       }
       // LOGIN WHEN WRONG INFO
-      else if (usernameValue !== LOGIN_USERNAME) {
+      else if (usernameInput !== LOGIN_USERNAME) {
         const changeUsernameRed = usernameId.style.borderColor = "red"
       }
       // LOGIN WHEN CORRECT INFO
-      else if (usernameValue == LOGIN_USERNAME) {
+      else if (usernameInput == LOGIN_USERNAME) {
         messageEl.innerText = "Welcome " + LOGIN_USERNAME;
       }
 
-      console.log(usernameValue);
+      console.log(usernameInput);
     }
 
 
