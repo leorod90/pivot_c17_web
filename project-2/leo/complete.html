@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Example with Arrays</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Enter username">
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="login()">Login</button>
+    <p id="message"></p>
+  </div>
+
+  <script>
+    const users = [
+      { username: "student", password: "1234" },
+      { username: "teacher", password: "abcd" },
+      { username: "admin", password: "admin" }
+    ];
+
+    function login() {
+      let enteredUser = document.getElementById("username").value;
+      let enteredPass = document.getElementById("password").value;
+
+      let found = false;
+      for (let i = 0; i < users.length; i++) {
+        if (enteredUser === users[i].username && enteredPass === users[i].password) {
+          found = true;
+          break; 
+        }
+      }
+
+      if (found) {
+        document.getElementById("message").innerText = "✅ Logged in successfully!";
+      } else {
+        document.getElementById("message").innerText = "❌ Invalid username or password.";
+      }
+    }
+  </script>
+</body>
+</html>
