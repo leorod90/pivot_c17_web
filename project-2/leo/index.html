@@ -34,11 +34,12 @@
     <h2>Login-Leo</h2>
     <input type="text" id="username" placeholder="Enter username">
     <input type="password" id="password" placeholder="Enter password">
-    <button onclick="login()">Login</button>
+    <button id="login-btn">Login</button>
     <p id="message"></p>
   </div>
  <script>
     // ----------------
+    const loginBtn = document.getElementById("login-btn");
 
     const passwordId = document.getElementById("password");
     const passwordValue = passwordId.value; // THIS LINE ADD VALUE
@@ -68,6 +69,8 @@
       console.log(usernameValue);
     }
 
+
+    loginBtn.addEventListener("click", login)
   </script>
 </body>
 
