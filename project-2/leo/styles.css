@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 2rem;
+}
+
+.container {
+  max-width: 300px;
+}
+
+input,
+button {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+#message {
+  margin-top: 1rem;
+  font-weight: bold;
+}
