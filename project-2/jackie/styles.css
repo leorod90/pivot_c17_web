@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login Example</title>
+  <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Jacqueline-login</h2>
+    <input type="text" id="username" placeholder="Enter username">
+    <input type="password" id="password" placeholder="Enter password">
+    <button id="login-btn">Login</button>
+    <p id="message"></p>
+  </div>
+  </script>
+</body>
+
+</html>
