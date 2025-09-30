@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Coty Clicker</title>
+
+<style>
+    body { background-color: rgba(255, 255, 255, 0.459)}
+
+.blue-txt {color:blue;}
+
+#header { border: 1px solid black;}
+
+</style>
+</head>
+
+<body>
+<h1 id="header" class="blue-txt">This is my Clicker</h1>
+<p id="paragraph" class="blue-txt">test</p>
+<button id="button" type="button">Click Me!</button>
+
+<hr/>
+
+<p id="count"></p>
+    <button id="count-btn">Count</button> 
+    
+
+
+<script>
+const h1Element = document.getElementById("header");
+const pElement = document.getElementById("paragraph");
+const btnElement = document.getElementById("button");
+
+h1Element.style.color = "red";
+pElement.style.color = "green";
+
+btnElement.addEventListener("click", function () 
+{ document.getElementById("paragraph").innerHTML = "Hello World";
+});
+
+const countElement = document.getElementById("count");
+const countbtnElement = document.getElementById("count-btn");
+
+let countAmount = 0;
+
+countbtnElement.addEventListener("click", function () {
+countAmount += 1;
+document.getElementById("count").innerHTML = countamount;
+});
+
+// pElement.innerText = "Hello" + userInput;
+
+// const userInput = prompt("what is your name?");
+
+</script>
+
+</body>
+
+</html>
