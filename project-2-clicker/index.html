@@ -30,28 +30,28 @@
     <h1 id="header" class="blue-text">Welcome to Bryant's Clicker</h1>
 
     <!-- Removed invalid <p1> tag, replaced with <p id="paragraph"> above -->
-  
-<p id="paragraph">Bryant Stuff</p>
-<button id="myButton">Click me!</button>
-<p id="clickCount">0</p>
 
-<script>
-    const headerElement = document.getElementById("header");
-    headerElement.style.color = "blue";
-    const paragraphElement = document.getElementById("paragraph");
-    paragraphElement.style.color = "blue";
+    <p id="paragraph">Bryant Stuff</p>
+    <button id="myButton">Click me!</button>
+    <p id="clickCount">0</p>
 
-    const name = prompt("What is your name?");
-    headerElement.innerText = name + "'s now your clicker";
+    <script>
+        const headerElement = document.getElementById("header");
+        headerElement.style.color = "blue";
+        const paragraphElement = document.getElementById("paragraph");
+        paragraphElement.style.color = "blue";
 
-    const button = document.getElementById("myButton");
-    const clickCount = document.getElementById("clickCount");
-    let count = 0;
-    button.addEventListener("click", function() {
-        count++;
-        clickCount.innerText = count;
-    });
-</script>
+        const name = prompt("What is your name?");
+        headerElement.innerText = name + "'s now your clicker";
+
+        const button = document.getElementById("myButton");
+        const clickCount = document.getElementById("clickCount");
+        let count = 0;
+        button.addEventListener("click", function () {
+            count++;
+            clickCount.innerText = count;
+        });
+    </script>
 
 </body>
 
