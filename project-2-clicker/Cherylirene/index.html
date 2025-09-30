@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+
+    <title>Cherylirene Clicker</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        #header {
+            border: 1px solid black;
+        }
+
+        .blue-txt {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="header" class="blue-txt">This is my clicker</h1>
+    <p id="paragraph" class="blue-txt"></p>
+    <p id="count"></p>
+<button id="button">Click Me!</button>
+<button id="count-btn">Click Me!</button>
+
+    <script>
+        const h1Element = document.getElementById("header");
+      const btnElement = document.getElementById("button");
+      const pElement = document.getElementById("paragraph");
+      const countElement = document.getElementById("count");
+       const countBtnElement = document.getElementById("count-btn");
+       h1Element.style.color = "red";
+ pElement.style.color = "green";
+btnElement.addEventListener("click", myFunction);
+countBtnElement.addEventListener("click", myFunction);
+
+
+
+
+ 
+let countAmount = 0;
+
+function myFunction() {
+  document.getElementById("paragraph").innerHTML = "Hello World";
+document.getElementById("count").innerHTML = countAmount;
+countAmount += 1;}
+
+        // const pElement = document.getElementById("paragraph");
+        
+        // const userInput = prompt("What is your name?");
+        // pElement.innerText = "Hello" + userInput;
+       
+        
+    </script>
+</body>
+
+</html>
