@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Bryant's Clicker</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        p1 {
+            color: red;
+            font-size: 40px;
+        }
+
+        #header {
+            color: green;
+            font-size: 20px;
+        }
+
+        .blue-text {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="header" class="blue-text">Welcome to Bryant's Clicker</h1>
+
+    <!-- Removed invalid <p1> tag, replaced with <p id="paragraph"> above -->
+  
+<p id="paragraph">Bryant Stuff</p>
+<button id="myButton">Click me!</button>
+<p id="clickCount">0</p>
+
+<script>
+    const headerElement = document.getElementById("header");
+    headerElement.style.color = "blue";
+    const paragraphElement = document.getElementById("paragraph");
+    paragraphElement.style.color = "blue";
+
+    const name = prompt("What is your name?");
+    headerElement.innerText = name + "'s now your clicker";
+
+    const button = document.getElementById("myButton");
+    const clickCount = document.getElementById("clickCount");
+    let count = 0;
+    button.addEventListener("click", function() {
+        count++;
+        clickCount.innerText = count;
+    });
+</script>
+</body>
+
+</html>
