@@ -25,36 +25,24 @@
   <p id="paragraph" class="blue-txt"></p>
   <button id="button" type="button">Click Me!</button>
 
-  <br />
-
   <p id="count"></p>
   <button id="count-btn">Count</button>
 
-  <script>
-    const h1Element = document.getElementById("header");
-    const pElement = document.getElementById("paragraph");
-    const btnElement = document.getElementById("button");
+  <hr />
 
-    h1Element.style.color = "red";
-    pElement.style.color = "green";
+  <h1>Login Practice</h1>
 
-    btnElement.addEventListener("click", function () {
-      document.getElementById("paragraph").innerHTML = "Hello World";
-    });
-
-    // --------------
-    const countElement = document.getElementById("count");
-    const countBtnElement = document.getElementById("count-btn");
-
-    let countAmount = 0;
-
-    countBtnElement.addEventListener("click", function () {
-      countAmount +=  1;
-      document.getElementById("count").innerHTML = countAmount;
-    });
-    // const userInput = prompt("What is your name?");
-    // pElement.innerText = "Hello " + userInput;
-  </script>
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email" placeholder="example.com">
+  <br />
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password">
+  <br />
+  <button type="button" id="login-btn">Login</button>
+  <h3 id="welcome-txt"></h3>
+  
+  <script src="login.js"></script>
+  <script src="clicker.js"></script>
 </body>
 
 </html>
