@@ -24,37 +24,27 @@
     <h1 id="header" class="blue-txt">This is my clicker</h1>
     <p id="paragraph" class="blue-txt"></p>
     <p id="count"></p>
-<button id="button">Click Me!</button>
-<button id="count-btn">Click Me!</button>
-
-    <script>
-        const h1Element = document.getElementById("header");
-      const btnElement = document.getElementById("button");
-      const pElement = document.getElementById("paragraph");
-      const countElement = document.getElementById("count");
-       const countBtnElement = document.getElementById("count-btn");
-       h1Element.style.color = "red";
- pElement.style.color = "green";
-btnElement.addEventListener("click", myFunction);
-countBtnElement.addEventListener("click", myFunction);
+    <button id="button">Click Me!</button>
+    <button id="count-btn">Count</button>
 
 
 
 
- 
-let countAmount = 0;
+    <hr/>
 
-function myFunction() {
-  document.getElementById("paragraph").innerHTML = "Hello World";
-document.getElementById("count").innerHTML = countAmount;
-countAmount += 1;}
+    <label for="Email">Enter your email:</label>
+    <input type="Email" id="Email" name="Email">
+<br/>
+    <label for="password">Enter your password:</label>
+    <input type="password" id="password" name="password">
+<br/>
+    <button type="Login" id="login-btn">Login</button>
+<h3 id="welcome-txt"></h3>
+    <script src="clicker.js">
 
-        // const pElement = document.getElementById("paragraph");
-        
-        // const userInput = prompt("What is your name?");
-        // pElement.innerText = "Hello" + userInput;
-       
-        
+    </script>
+    <script src="login.js">
+
     </script>
 </body>
 
