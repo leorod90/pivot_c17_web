@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Page Title</title>
+</head>
+
+<body>
+
+  <input id="nameInput" placeholder="Type name">
+  <button id="logBtn">Log</button>
+  <p id="out"></p>
+
+  <script>
+    const input = document.getElementById('nameInput');
+    const btn = document.getElementById('logBtn');
+    const out = document.getElementById('out');
+
+    btn.addEventListener('click', function () {
+      // .value reads what the user typed
+      console.log('element returned:', input); // element object
+      console.log('value:', input.value);      // the string typed
+      out.innerText = 'You typed: ' + input.value;
+    });
+  </script>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
