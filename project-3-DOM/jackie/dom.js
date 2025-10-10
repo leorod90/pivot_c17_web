@@ -33,7 +33,21 @@ if (foodsMemory) {
 
 // add a function to a button
 addBtn.addEventListener('click', function () {
+  if (!foodInput.value ) {
+return alert ("please type something");
+  
+      
+  }
   foods.push(foodInput.value);
+  
+  foodInput.value = ""; 
+ 
+
+  
+    
+  
+
+
   saveFoods();
   renderFoods();
 });
@@ -57,7 +71,7 @@ function renderFoods() {
 }
 function saveFoods() {
   const jsonFoods = JSON.stringify(foods);
-  localStorage.setItem("foodMemory",  jsonFoods);
+  localStorage.setItem("foodMemory", jsonFoods);
 }
 
 renderFoods();
