@@ -23,15 +23,23 @@ button.addEventListener("click", function () {
 
 // state
 let foods = [];
+// get and check of foodsMemory exist
 
+const foodsMemory = localStorage.getItem("foodMemory");
+if (foodsMemory) {
+  foods = JSON.parse(foodsMemory);
+}
+
+
+// add a function to a button
 addBtn.addEventListener('click', function () {
   foods.push(foodInput.value);
-  console.log(foods);
-  renderFoods()
+  saveFoods();
+  renderFoods();
 });
 
-// ["red", "blue", "yellow"]
 
+// make our array into a list in html
 function renderFoods() {
   list.innerHTML = "";
 
@@ -47,3 +55,9 @@ function renderFoods() {
 
   }
 }
+function saveFoods() {
+  const jsonFoods = JSON.stringify(foods);
+  localStorage.setItem("foodMemory",  jsonFoods);
+}
+
+renderFoods();
