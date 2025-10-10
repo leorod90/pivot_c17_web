@@ -12,17 +12,22 @@ button.addEventListener('click', function () {
     if (isRed) {
         text.style.color = "red";
     } else {
-        text.style.color = "black";
+        text.style.color = "blue";
 
     }
 });
 
 let foods = []; // Or an existing array like: let myArray = ["item1", "item2"];
 
-  addBtn.addEventListener('click', function () {
+const foodsMemory = localStorage.getItem("foodsMemory"); {
+    foods = JSON.parse(foodsMemory);
+}
 
-
-    foods.push(foodInput.value)
+addBtn.addEventListener('click', function () {
+    foods.push(foodInput.value);
+    renderFoods();
+    saveFoods();
+    
 
 });
 
@@ -38,4 +43,11 @@ function renderFoods() {
         list.appendChild(li);
 
     }
+
+    function saveFoods() {
+        const jsonFoods = JSON.stringfly(foods);
+        localStorage.setItem("foodsMemory", jsonFoods);
+    }
 }
+
+renderFoods();
