@@ -1,5 +1,5 @@
 // deletes ALL storage
-localStorage.clear();
+
 // removes ONE item from storage
 localStorage.removeItem('yourKeyName');
 

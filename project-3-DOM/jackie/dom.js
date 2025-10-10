@@ -33,26 +33,25 @@ if (foodsMemory) {
 
 // add a function to a button
 addBtn.addEventListener('click', function () {
-  if (!foodInput.value ) {
-return alert ("please type something");
-  
-      
+  if (!foodInput.value) {
+    return alert("please type something");
+
+
   }
   foods.push(foodInput.value);
-  
-  foodInput.value = ""; 
- 
 
-  
-    
-  
+  foodInput.value = ""
 
 
   saveFoods();
   renderFoods();
 });
 
-
+const deleteAllBtn = document.getElementById("deleteAll");
+deleteAllBtn.addEventListener("click", function () {
+  // Clear all items from localStorage
+  localStorage.clear();
+});
 // make our array into a list in html
 function renderFoods() {
   list.innerHTML = "";

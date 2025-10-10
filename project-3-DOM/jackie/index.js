@@ -28,13 +28,15 @@ addTwo(10, 7);  // console.log(10+7)
 const personOne = {
     name: "leo",
     age: 35,
-   
-}
+} 
+deleteAllBtn.addEventListener("click", function() {
+  // Clear all items from localStorage
+  localStorage.clear(); 
+});
+ 
+ 
+  
 
-function printPerson(object){
-  console.log(object.name + " is " + personOne.age + " years old.")
-  console.log(object.name + " is " + personTwo.age + " years old.")
-}
 
-printPerson(personOne)  
-printPerson(personTwo)
+
+
