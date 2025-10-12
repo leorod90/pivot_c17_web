@@ -32,5 +32,5 @@ const personTwo = {
 function printPerson(object) {
     console.log(object.name + " is " + object.age + " years old.");
 }
- printPerson(personOne) 
+printPerson(personOne)
 printPerson(personTwo)

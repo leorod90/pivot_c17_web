@@ -1,4 +1,3 @@
-
 const button = document.getElementById("toggle");
 const text = document.getElementById("text");
 
@@ -17,25 +16,30 @@ button.addEventListener('click', function () {
     } else {
         text.style.color = "black";
     }
-    
+
 });
 
 let foods = [];
 
 const foodsMemory = localStorage.getItem("foodsMemory");
-if(foodsMemory){
+if (foodsMemory) {
     foods = JSON.parse(foodsMemory);
 
 }
 
 
 
-
 // add a function to a button
 
 addBtn.addEventListener('click', function () {
+    if (foodInput.value === "") {
+        alert("Please put something!");
+        return; // stops the function here
+    }
     foods.push(foodInput.value);
-    console.log(foods);
+    foodInput.value = "";
+
+
     saveFoods();
     renderFoods();
 });
@@ -49,18 +53,28 @@ function renderFoods() {
         i < foods.length;
         i++) {
 
-        const element = foods[i];//get the current element
-        const li = document.createElement("li");//create a <li></li>
-        li.textContent = element; //fill <li></li> with current element
-        list.appendChild(li); // add to ul
+        const element = foods[i];
+        const li = document.createElement("li");
+        li.textContent = element;
+        list.appendChild(li);
         console.log(element);
 
 
     }
 }
-function saveFoods(){
+function saveFoods() {
     const jsonFoods = JSON.stringify(foods);
     localStorage.setItem("foodsMemory", jsonFoods);
 }
 
 renderFoods();
+
+const clearBtn = document.getElementById("clear-storage");
+console.log("Clear button found?", clearBtn);
+
+clearBtn?.addEventListener("click", () => {
+    console.log("Clearing...");
+    localStorage.removeItem("foodsMemory");
+    foods = [];
+    list.innerHTML = "";
+});
