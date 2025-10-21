@@ -31,6 +31,9 @@ addBtn.addEventListener('click', function () {
 
 });
 
+
+ 
+
 function renderFoods() {
     list.innerHTML = "";
 
